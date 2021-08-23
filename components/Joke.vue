@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="`jokes/${id}`">
     <div class="joke">
-      <p>{{ id }} - {{ joke }}</p>
+      <p>{{ joke }}</p>
     </div>
   </NuxtLink>
 </template>
@@ -17,5 +17,8 @@ export default {
   padding: 1rem;
   border: 1px dotted gray;
   margin: 1rem 0;
+}
+.joke:hover {
+  color: black;
 }
 </style>
