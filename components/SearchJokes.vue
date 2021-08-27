@@ -51,6 +51,7 @@ form > * + * {
 input {
   caret-color: #ff0000;
   padding: 10px 5px;
+  margin-block: 1rem;
 }
 input[type='submit']:hover {
   outline-offset: -5px;
