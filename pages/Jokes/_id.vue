@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLink to="/jokes" class="back">Back to Jokes</NuxtLink>
-    <p>{{ joke }}</p>
+    <p class="currentJoke">{{ joke }}</p>
     <hr />
     <small>Joke ID : {{ $route.params.id }}</small>
   </div>
@@ -43,10 +43,35 @@ export default {
 
 <style>
 .back {
+  all: unset;
+  text-align: center;
   display: block;
-  border: 1px solid black;
   margin-inline: auto;
+  margin-block: 1rem;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid red;
+  transition: 0.3s;
   width: fit-content;
-  padding: 0.5rem 1rem;
+}
+.currentJoke {
+  font-size: clamp(0.95rem, 0.8vw + 0.8rem, 1.4rem);
+  text-align: center;
+}
+hr {
+  margin-block: 1rem;
+}
+small {
+  text-align: right;
+  display: block;
+}
+@media screen and (max-width: 500px) {
+  small {
+    text-align: center;
+  }
 }
 </style>

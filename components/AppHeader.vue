@@ -65,9 +65,15 @@ header ul {
   header {
     justify-content: center;
   }
+
   header .title {
     font-size: 2.5rem;
     text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header ul {
+    padding-inline: 0;
   }
 }
 @media screen and (max-width: 347px) {

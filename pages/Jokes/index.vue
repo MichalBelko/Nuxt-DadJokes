@@ -8,8 +8,8 @@
       :id="joke.id"
     />
     <div class="btn-container">
-      <button @click="previous">Previous</button>
-      <button @click="next">Next</button>
+      <button class="btn" @click="previous">Previous</button>
+      <button class="btn" @click="next">Next</button>
     </div>
   </div>
 </template>
@@ -113,18 +113,25 @@ export default {
 .btn-container {
   display: flex;
   justify-content: space-between;
-  margin-block: 1rem;
+  padding-block: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+  background-color: #f4f4f4;
+  max-width: 800px;
+  margin-inline: auto;
 }
 .btn-container > * {
   width: 100px;
   padding: 10px 5px;
-
   outline: none;
   border: none;
   cursor: pointer;
   background-color: #ff0000;
   color: #fff;
   font-size: 1rem;
+  margin-inline: 1rem;
 }
 .btn-container button:hover {
   transform: scale(1.02);
@@ -134,5 +141,10 @@ export default {
 }
 .btn-container button:last-child {
   border-radius: 0 15px 15px 0;
+}
+@media screen and (max-width: 300px) {
+  .btn {
+    width: 80px;
+  }
 }
 </style>

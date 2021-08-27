@@ -1,4 +1,7 @@
 export default {
+  router: {
+    base: '/Nuxt-DadJokes/',
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'DadJokes',

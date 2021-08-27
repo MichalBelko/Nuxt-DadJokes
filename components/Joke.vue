@@ -17,6 +17,7 @@ export default {
   padding: 1rem;
   border: 1px dotted gray;
   margin: 1rem 0;
+  font-size: clamp(0.95rem, 0.6vw + 0.8rem, 1.3rem);
 }
 .joke:hover {
   color: black;
