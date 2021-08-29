@@ -1,11 +1,13 @@
 # DadJokes
 
-## Build Setup
+## Browse through all different dad jokes in the Internet - Vue/Nuxt Project
 
-```bash
-# install dependencies
-$ npm install
+- Technologies
+
 ```
+Html, css, boostrap, javascript, babel, webpack, tailwind, vue, nuxt
+```
+- demo : 
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
