@@ -2,7 +2,7 @@
 
 ## Browse through all different dad jokes in the Internet - Vue/Nuxt Project
 
-- Technologies
+- Technologies:
 
 ```
 Html, css, boostrap, javascript, babel, webpack, tailwind, vue, nuxt
